@@ -1,0 +1,13 @@
+{
+  "name": "eth-debug-view",
+  "description": "This tool provides a front-end to debug sets of transactions in Ethereum. It includes stacktraces, events and details on contract creation.",
+  "author": "Peter Rutgers",
+  "version": "0.2.0",
+  "dependencies": {
+    "express": "^4.14.0",
+    "web3": "^0.16.0"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
