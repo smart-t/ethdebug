@@ -2,10 +2,10 @@
 Transaction debugging tool for Ethereum
 
 ## How to run
-The program connects to the local Ethereum node through the default RPC port 8545. It provides a web interface at port 8003.
+The program connects over RPC to an Ethereum node, by default at `http://localhost:8545`. It provides a web interface at port 8003.
 - Start `geth` if not running, including arguments `--rpc --rpcapi "eth,debug"`
 - `npm install`
-- `npm start`
+- `npm start` or `npm start http://<rpc-host>:<rpc-port>`
 - Navigate to `http://localhost:8003/list`
 
 ## What it shows
