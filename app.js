@@ -1,6 +1,6 @@
 var express = require('express');
 var db = require('./lib/memory-db');
-var web3 = require('./lib/web3-patch');
+var web3 = require('./lib/web3-patch')(process.argv[2]);
 var chain = require('./lib/chain-parser');
 var views = require('./lib/views');
 var app = express();
