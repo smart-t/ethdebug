@@ -7,7 +7,7 @@ build:
 	docker build -t $(AUTHOR)/$(NAME):$(VERSION) .
 
 start:
-	docker run -d --name=ethdebug --net icec --ip $(SUBNET).241 -p 8003:8003 $(AUTHOR)/$(NAME):$(VERSION) http://$(SUBNET).1:8545
+	docker run -d --name=ethdebug --net tlnet --ip $(SUBNET).241 -p 8003:8003 $(AUTHOR)/$(NAME):$(VERSION) http://$(SUBNET).1:8545
 
 stop:
 	docker stop ethdebug
